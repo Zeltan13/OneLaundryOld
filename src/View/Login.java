@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package View;
-
+import Controller.LoginController;
+import javax.swing.JOptionPane;
 /**
  *
  * @author DHAFINDRA
@@ -42,17 +43,21 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         LabelLogin.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
+        LabelLogin.setForeground(new java.awt.Color(255, 255, 255));
         LabelLogin.setText("Login");
 
         jPanel2.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelUsername.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelUsername.setForeground(new java.awt.Color(255, 255, 255));
         LabelUsername.setText("Username");
 
         LabelPassword.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelPassword.setForeground(new java.awt.Color(255, 255, 255));
         LabelPassword.setText("Password");
 
         TextFieldPassword.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldPassword.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldPasswordActionPerformed(evt);
@@ -60,6 +65,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         TextFieldUsername.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldUsername.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldUsernameActionPerformed(evt);
@@ -67,10 +73,17 @@ public class Login extends javax.swing.JFrame {
         });
 
         buttonLogin.setBackground(new java.awt.Color(48, 48, 48));
+        buttonLogin.setForeground(new java.awt.Color(255, 255, 255));
         buttonLogin.setText("Login");
         buttonLogin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonLoginActionPerformed(evt);
+            }
+        });
 
         buttonExit.setBackground(new java.awt.Color(48, 48, 48));
+        buttonExit.setForeground(new java.awt.Color(255, 255, 255));
         buttonExit.setText("Exit");
         buttonExit.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -157,6 +170,24 @@ public class Login extends javax.swing.JFrame {
     private void TextFieldUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextFieldUsernameActionPerformed
+
+    private void buttonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoginActionPerformed
+        // TODO add your handling code here:
+        String username = TextFieldUsername.getText();
+        String password = TextFieldPassword.getText();
+        boolean loginSuccess;
+    
+        LoginController loginController = new LoginController();
+        loginSuccess = loginController.LoginController(username, password);
+        if (loginSuccess){
+            JOptionPane.showMessageDialog(null, "You have successfully Logged in");
+            Home H = new Home();
+            setVisible(false);
+            H.setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null, "Username or Password Incorrect");
+        }
+    }//GEN-LAST:event_buttonLoginActionPerformed
 
     /**
      * @param args the command line arguments

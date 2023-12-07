@@ -27,15 +27,15 @@ public class TambahTransaksi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        groupLayanan = new javax.swing.ButtonGroup();
+        groupStatus = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         LabelTambahDataTransaksi = new javax.swing.JLabel();
         LabelIDPelanggan1 = new javax.swing.JLabel();
         TextFieldIDPelanggan1 = new javax.swing.JTextField();
         LabelJenisLayanan = new javax.swing.JLabel();
-        ComboBoxLayanan = new javax.swing.JComboBox<>();
         LabelStatus = new javax.swing.JLabel();
-        ComboBoxStatus = new javax.swing.JComboBox<>();
         jSeparator1 = new javax.swing.JSeparator();
         LabelTgl = new javax.swing.JLabel();
         LabelJenisLayanan2 = new javax.swing.JLabel();
@@ -47,6 +47,10 @@ public class TambahTransaksi extends javax.swing.JFrame {
         buttonTambahItem = new javax.swing.JButton();
         buttonSimpan2 = new javax.swing.JButton();
         buttonKembali = new javax.swing.JButton();
+        buttonCowo = new javax.swing.JRadioButton();
+        buttonCewe = new javax.swing.JRadioButton();
+        buttonSelesai = new javax.swing.JRadioButton();
+        buttonCewe1 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,12 +59,15 @@ public class TambahTransaksi extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelTambahDataTransaksi.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        LabelTambahDataTransaksi.setForeground(new java.awt.Color(255, 255, 255));
         LabelTambahDataTransaksi.setText("Tambah Data Transaksi");
 
         LabelIDPelanggan1.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelIDPelanggan1.setForeground(new java.awt.Color(255, 255, 255));
         LabelIDPelanggan1.setText("ID Pelanggan");
 
         TextFieldIDPelanggan1.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldIDPelanggan1.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldIDPelanggan1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldIDPelanggan1ActionPerformed(evt);
@@ -68,37 +75,29 @@ public class TambahTransaksi extends javax.swing.JFrame {
         });
 
         LabelJenisLayanan.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelJenisLayanan.setForeground(new java.awt.Color(255, 255, 255));
         LabelJenisLayanan.setText("Jenis Layanan");
 
-        ComboBoxLayanan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reguler", "Item 2", "Item 3", "Item 4" }));
-        ComboBoxLayanan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboBoxLayananActionPerformed(evt);
-            }
-        });
-
         LabelStatus.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelStatus.setForeground(new java.awt.Color(255, 255, 255));
         LabelStatus.setText("Status Pencucian");
-
-        ComboBoxStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Belum Selesai", "Selesai" }));
-        ComboBoxStatus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComboBoxStatusActionPerformed(evt);
-            }
-        });
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         LabelTgl.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelTgl.setForeground(new java.awt.Color(255, 255, 255));
         LabelTgl.setText("Tanggal Pemasukkan");
 
         LabelJenisLayanan2.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelJenisLayanan2.setForeground(new java.awt.Color(255, 255, 255));
         LabelJenisLayanan2.setText("Item");
 
         LabelJenisLayanan3.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelJenisLayanan3.setForeground(new java.awt.Color(255, 255, 255));
         LabelJenisLayanan3.setText("Total");
 
         TextFieldIDPelanggan2.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldIDPelanggan2.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldIDPelanggan2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldIDPelanggan2ActionPerformed(evt);
@@ -106,6 +105,7 @@ public class TambahTransaksi extends javax.swing.JFrame {
         });
 
         TextFieldIDPelanggan3.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldIDPelanggan3.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldIDPelanggan3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldIDPelanggan3ActionPerformed(evt);
@@ -113,6 +113,7 @@ public class TambahTransaksi extends javax.swing.JFrame {
         });
 
         TextFieldIDPelanggan4.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldIDPelanggan4.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldIDPelanggan4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldIDPelanggan4ActionPerformed(evt);
@@ -120,20 +121,44 @@ public class TambahTransaksi extends javax.swing.JFrame {
         });
 
         buttonHitungTotal.setBackground(new java.awt.Color(48, 48, 48));
+        buttonHitungTotal.setForeground(new java.awt.Color(255, 255, 255));
         buttonHitungTotal.setText("Hitung");
         buttonHitungTotal.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonTambahItem.setBackground(new java.awt.Color(48, 48, 48));
+        buttonTambahItem.setForeground(new java.awt.Color(255, 255, 255));
         buttonTambahItem.setText("Tambah");
         buttonTambahItem.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonSimpan2.setBackground(new java.awt.Color(48, 48, 48));
+        buttonSimpan2.setForeground(new java.awt.Color(255, 255, 255));
         buttonSimpan2.setText("Simpan");
         buttonSimpan2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonKembali.setBackground(new java.awt.Color(48, 48, 48));
+        buttonKembali.setForeground(new java.awt.Color(255, 255, 255));
         buttonKembali.setText("Kembali");
         buttonKembali.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        buttonCowo.setBackground(new java.awt.Color(23, 23, 23));
+        groupLayanan.add(buttonCowo);
+        buttonCowo.setForeground(new java.awt.Color(255, 255, 255));
+        buttonCowo.setText("Laki-Laki");
+
+        buttonCewe.setBackground(new java.awt.Color(23, 23, 23));
+        groupLayanan.add(buttonCewe);
+        buttonCewe.setForeground(new java.awt.Color(255, 255, 255));
+        buttonCewe.setText("Perempuan");
+
+        buttonSelesai.setBackground(new java.awt.Color(23, 23, 23));
+        groupStatus.add(buttonSelesai);
+        buttonSelesai.setForeground(new java.awt.Color(255, 255, 255));
+        buttonSelesai.setText("Selesai");
+
+        buttonCewe1.setBackground(new java.awt.Color(23, 23, 23));
+        groupStatus.add(buttonCewe1);
+        buttonCewe1.setForeground(new java.awt.Color(255, 255, 255));
+        buttonCewe1.setText("Belum Selesai");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -141,16 +166,24 @@ public class TambahTransaksi extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelIDPelanggan1)
-                    .addComponent(LabelJenisLayanan)
-                    .addComponent(LabelTambahDataTransaksi)
-                    .addComponent(LabelStatus))
-                .addGap(1, 1, 1)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(ComboBoxStatus, 0, 102, Short.MAX_VALUE)
-                    .addComponent(ComboBoxLayanan, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TextFieldIDPelanggan1))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(LabelIDPelanggan1)
+                        .addGap(42, 42, 42)
+                        .addComponent(TextFieldIDPelanggan1))
+                    .addComponent(LabelTambahDataTransaksi)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(LabelStatus)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                        .addComponent(buttonSelesai)
+                        .addGap(18, 18, 18)
+                        .addComponent(buttonCewe1))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(LabelJenisLayanan)
+                        .addGap(40, 40, 40)
+                        .addComponent(buttonCowo)
+                        .addGap(18, 18, 18)
+                        .addComponent(buttonCewe)))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -211,13 +244,18 @@ public class TambahTransaksi extends javax.swing.JFrame {
                             .addComponent(TextFieldIDPelanggan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LabelIDPelanggan1))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LabelJenisLayanan)
-                            .addComponent(ComboBoxLayanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonCowo)
+                                .addComponent(buttonCewe)))
+                        .addGap(19, 19, 19)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LabelStatus)
-                            .addComponent(ComboBoxStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(buttonSelesai)
+                                .addComponent(buttonCewe1)))
+                        .addGap(5, 5, 5))
                     .addComponent(jSeparator1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -260,14 +298,6 @@ public class TambahTransaksi extends javax.swing.JFrame {
     private void TextFieldIDPelanggan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldIDPelanggan1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextFieldIDPelanggan1ActionPerformed
-
-    private void ComboBoxLayananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxLayananActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ComboBoxLayananActionPerformed
-
-    private void ComboBoxStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxStatusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ComboBoxStatusActionPerformed
 
     private void TextFieldIDPelanggan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldIDPelanggan2ActionPerformed
         // TODO add your handling code here:
@@ -317,8 +347,6 @@ public class TambahTransaksi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> ComboBoxLayanan;
-    private javax.swing.JComboBox<String> ComboBoxStatus;
     private javax.swing.JLabel LabelIDPelanggan1;
     private javax.swing.JLabel LabelJenisLayanan;
     private javax.swing.JLabel LabelJenisLayanan2;
@@ -330,10 +358,16 @@ public class TambahTransaksi extends javax.swing.JFrame {
     private javax.swing.JTextField TextFieldIDPelanggan2;
     private javax.swing.JTextField TextFieldIDPelanggan3;
     private javax.swing.JTextField TextFieldIDPelanggan4;
+    private javax.swing.JRadioButton buttonCewe;
+    private javax.swing.JRadioButton buttonCewe1;
+    private javax.swing.JRadioButton buttonCowo;
     private javax.swing.JButton buttonHitungTotal;
     private javax.swing.JButton buttonKembali;
+    private javax.swing.JRadioButton buttonSelesai;
     private javax.swing.JButton buttonSimpan2;
     private javax.swing.JButton buttonTambahItem;
+    private javax.swing.ButtonGroup groupLayanan;
+    private javax.swing.ButtonGroup groupStatus;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;

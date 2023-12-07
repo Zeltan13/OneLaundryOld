@@ -5,6 +5,10 @@
  */
 package View;
 
+import javax.swing.JButton;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author DHAFINDRA
@@ -18,6 +22,64 @@ public class TambahAdmin extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JTextField getTextFieldAlamat() {
+        return TextFieldAlamat;
+    }
+
+    public void setTextFieldAlamat(JTextField TextFieldAlamat) {
+        this.TextFieldAlamat = TextFieldAlamat;
+    }
+
+    public JTextField getTextFieldNama() {
+        return TextFieldNama;
+    }
+
+    public void setTextFieldNama(JTextField TextFieldNama) {
+        this.TextFieldNama = TextFieldNama;
+    }
+
+    public JTextField getTextFieldUsername() {
+        return TextFieldUsername;
+    }
+
+    public void setTextFieldUsername(JTextField TextFieldUsername) {
+        this.TextFieldUsername = TextFieldUsername;
+    }
+
+    public JTextField getTextFieldnoTelp() {
+        return TextFieldnoTelp;
+    }
+
+    public void setTextFieldnoTelp(JTextField TextFieldnoTelp) {
+        this.TextFieldnoTelp = TextFieldnoTelp;
+    }
+
+    public JRadioButton getButtonCewe() {
+        return buttonCewe;
+    }
+
+    public void setButtonCewe(JRadioButton buttonCewe) {
+        this.buttonCewe = buttonCewe;
+    }
+
+    public JRadioButton getButtonCowo() {
+        return buttonCowo;
+    }
+
+    public void setButtonCowo(JRadioButton buttonCowo) {
+        this.buttonCowo = buttonCowo;
+    }
+
+    public JButton getButtonSimpan() {
+        return buttonSimpan;
+    }
+
+    public void setButtonSimpan(JButton buttonSimpan) {
+        this.buttonSimpan = buttonSimpan;
+    }
+    
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,6 +89,7 @@ public class TambahAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        groupKelamin = new javax.swing.ButtonGroup();
         Background = new javax.swing.JPanel();
         LabelTambahAdmin = new javax.swing.JLabel();
         BGDataAdmin = new javax.swing.JPanel();
@@ -51,23 +114,29 @@ public class TambahAdmin extends javax.swing.JFrame {
         Background.setBackground(new java.awt.Color(0, 0, 0));
 
         LabelTambahAdmin.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
+        LabelTambahAdmin.setForeground(new java.awt.Color(255, 255, 255));
         LabelTambahAdmin.setText("Tambah Admin");
 
         BGDataAdmin.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelDataAdmin.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        LabelDataAdmin.setForeground(new java.awt.Color(255, 255, 255));
         LabelDataAdmin.setText("Data Admin");
 
         LabelNama.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelNama.setForeground(new java.awt.Color(255, 255, 255));
         LabelNama.setText("Nama");
 
         LabelAlamat.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelAlamat.setForeground(new java.awt.Color(255, 255, 255));
         LabelAlamat.setText("Alamat");
 
         LabelnoTelp.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelnoTelp.setForeground(new java.awt.Color(255, 255, 255));
         LabelnoTelp.setText("no. Telp");
 
         TextFieldAlamat.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldAlamat.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldAlamat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldAlamatActionPerformed(evt);
@@ -75,6 +144,7 @@ public class TambahAdmin extends javax.swing.JFrame {
         });
 
         TextFieldNama.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldNama.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldNamaActionPerformed(evt);
@@ -82,6 +152,7 @@ public class TambahAdmin extends javax.swing.JFrame {
         });
 
         TextFieldnoTelp.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldnoTelp.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldnoTelp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldnoTelpActionPerformed(evt);
@@ -89,18 +160,25 @@ public class TambahAdmin extends javax.swing.JFrame {
         });
 
         LabelKelamin.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelKelamin.setForeground(new java.awt.Color(255, 255, 255));
         LabelKelamin.setText("Jenis Kelamin");
 
         buttonCowo.setBackground(new java.awt.Color(23, 23, 23));
+        groupKelamin.add(buttonCowo);
+        buttonCowo.setForeground(new java.awt.Color(255, 255, 255));
         buttonCowo.setText("Laki-Laki");
 
         buttonCewe.setBackground(new java.awt.Color(23, 23, 23));
+        groupKelamin.add(buttonCewe);
+        buttonCewe.setForeground(new java.awt.Color(255, 255, 255));
         buttonCewe.setText("Perempuan");
 
         LabelUsername.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelUsername.setForeground(new java.awt.Color(255, 255, 255));
         LabelUsername.setText("Username");
 
         TextFieldUsername.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldUsername.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldUsernameActionPerformed(evt);
@@ -108,9 +186,11 @@ public class TambahAdmin extends javax.swing.JFrame {
         });
 
         LabelPassword.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelPassword.setForeground(new java.awt.Color(255, 255, 255));
         LabelPassword.setText("Password");
 
         TextFieldPassword.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldPassword.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldPasswordActionPerformed(evt);
@@ -120,6 +200,11 @@ public class TambahAdmin extends javax.swing.JFrame {
         buttonSimpan.setBackground(new java.awt.Color(48, 48, 48));
         buttonSimpan.setText("Simpan");
         buttonSimpan.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonSimpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSimpanActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BGDataAdminLayout = new javax.swing.GroupLayout(BGDataAdmin);
         BGDataAdmin.setLayout(BGDataAdminLayout);
@@ -257,6 +342,25 @@ public class TambahAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TextFieldPasswordActionPerformed
 
+    private void buttonSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSimpanActionPerformed
+        // TODO add your handling code here:
+        String nama = TextFieldNama.getText();
+        String alamat = TextFieldAlamat.getText();
+        String notelp = TextFieldnoTelp.getText();
+        
+        String jeniskelamin;
+        if (groupKelamin.getSelection().equals(buttonCowo.getModel())) {
+            jeniskelamin = "Laki-Laki";
+        } else if (groupKelamin.getSelection().equals(buttonCewe.getModel())) {
+            jeniskelamin = "Perempuan";
+        }
+        
+        String username = TextFieldUsername.getText();
+        String password = TextFieldPassword.getText();
+        
+        
+    }//GEN-LAST:event_buttonSimpanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,5 +415,6 @@ public class TambahAdmin extends javax.swing.JFrame {
     private javax.swing.JRadioButton buttonCewe;
     private javax.swing.JRadioButton buttonCowo;
     private javax.swing.JButton buttonSimpan;
+    private javax.swing.ButtonGroup groupKelamin;
     // End of variables declaration//GEN-END:variables
 }

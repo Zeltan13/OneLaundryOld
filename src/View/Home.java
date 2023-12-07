@@ -47,20 +47,29 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         LabelHome.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
+        LabelHome.setForeground(new java.awt.Color(255, 255, 255));
         LabelHome.setText("Home");
 
         buttonLogout.setBackground(new java.awt.Color(48, 48, 48));
+        buttonLogout.setForeground(new java.awt.Color(255, 255, 255));
         buttonLogout.setText("Logout");
         buttonLogout.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonLogoutActionPerformed(evt);
+            }
+        });
 
         jPanel4.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelDataPelanggan.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        LabelDataPelanggan.setForeground(new java.awt.Color(255, 255, 255));
         LabelDataPelanggan.setText("Data Pelanggan");
 
         jScrollPane1.setBackground(new java.awt.Color(23, 23, 23));
 
-        TabelDataPelanggan.setBackground(new java.awt.Color(23, 23, 23));
+        TabelDataPelanggan.setBackground(new java.awt.Color(255, 255, 255));
+        TabelDataPelanggan.setForeground(new java.awt.Color(0, 0, 0));
         TabelDataPelanggan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -75,8 +84,14 @@ public class Home extends javax.swing.JFrame {
         jScrollPane1.setViewportView(TabelDataPelanggan);
 
         buttonTambahPelanggan.setBackground(new java.awt.Color(48, 48, 48));
+        buttonTambahPelanggan.setForeground(new java.awt.Color(255, 255, 255));
         buttonTambahPelanggan.setText("Add");
         buttonTambahPelanggan.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonTambahPelanggan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonTambahPelangganActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -107,11 +122,12 @@ public class Home extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelDataTransaksi.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        LabelDataTransaksi.setForeground(new java.awt.Color(255, 255, 255));
         LabelDataTransaksi.setText("Data Transaksi");
 
         jScrollPane2.setBackground(new java.awt.Color(23, 23, 23));
 
-        TabelDataTransaksi.setBackground(new java.awt.Color(23, 23, 23));
+        TabelDataTransaksi.setBackground(new java.awt.Color(255, 255, 255));
         TabelDataTransaksi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -128,6 +144,11 @@ public class Home extends javax.swing.JFrame {
         buttonTambahTransaksi.setBackground(new java.awt.Color(48, 48, 48));
         buttonTambahTransaksi.setText("Add");
         buttonTambahTransaksi.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonTambahTransaksi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonTambahTransaksiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -156,8 +177,14 @@ public class Home extends javax.swing.JFrame {
         );
 
         buttonTambahAdmin.setBackground(new java.awt.Color(48, 48, 48));
+        buttonTambahAdmin.setForeground(new java.awt.Color(255, 255, 255));
         buttonTambahAdmin.setText("Add Admin");
         buttonTambahAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonTambahAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonTambahAdminActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -204,6 +231,34 @@ public class Home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonTambahPelangganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTambahPelangganActionPerformed
+        // TODO add your handling code here:
+        TambahPelanggan TP = new TambahPelanggan();
+        setVisible(false);
+        TP.setVisible(true);
+    }//GEN-LAST:event_buttonTambahPelangganActionPerformed
+
+    private void buttonTambahAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTambahAdminActionPerformed
+        // TODO add your handling code here:
+        TambahAdmin TA = new TambahAdmin();
+        setVisible(false);
+        TA.setVisible(true);
+    }//GEN-LAST:event_buttonTambahAdminActionPerformed
+
+    private void buttonLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogoutActionPerformed
+        // TODO add your handling code here:
+        Login L = new Login();
+        setVisible(false);
+        L.setVisible(true);
+    }//GEN-LAST:event_buttonLogoutActionPerformed
+
+    private void buttonTambahTransaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTambahTransaksiActionPerformed
+        // TODO add your handling code here:
+        TambahTransaksi TT = new TambahTransaksi();
+        setVisible(false);
+        TT.setVisible(true);
+    }//GEN-LAST:event_buttonTambahTransaksiActionPerformed
 
     /**
      * @param args the command line arguments

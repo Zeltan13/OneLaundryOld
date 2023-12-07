@@ -49,27 +49,35 @@ public class TambahPelanggan extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelTambahDataPelanggan2.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        LabelTambahDataPelanggan2.setForeground(new java.awt.Color(255, 255, 255));
         LabelTambahDataPelanggan2.setText("Tambah Data Pelanggan");
 
         LabelNama2.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelNama2.setForeground(new java.awt.Color(255, 255, 255));
         LabelNama2.setText("Nama");
 
         LabelAlamat2.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelAlamat2.setForeground(new java.awt.Color(255, 255, 255));
         LabelAlamat2.setText("Alamat");
 
         LabelnoTelp2.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelnoTelp2.setForeground(new java.awt.Color(255, 255, 255));
         LabelnoTelp2.setText("no. Telp");
 
         LabelKelamin2.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelKelamin2.setForeground(new java.awt.Color(255, 255, 255));
         LabelKelamin2.setText("Jenis Kelamin");
 
         buttonCowo2.setBackground(new java.awt.Color(23, 23, 23));
+        buttonCowo2.setForeground(new java.awt.Color(255, 255, 255));
         buttonCowo2.setText("Laki-Laki");
 
         buttonCewe2.setBackground(new java.awt.Color(23, 23, 23));
+        buttonCewe2.setForeground(new java.awt.Color(255, 255, 255));
         buttonCewe2.setText("Perempuan");
 
         TextFieldnoTelp2.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldnoTelp2.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldnoTelp2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldnoTelp2ActionPerformed(evt);
@@ -77,6 +85,7 @@ public class TambahPelanggan extends javax.swing.JFrame {
         });
 
         TextFieldAlamat2.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldAlamat2.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldAlamat2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldAlamat2ActionPerformed(evt);
@@ -84,6 +93,7 @@ public class TambahPelanggan extends javax.swing.JFrame {
         });
 
         TextFieldNama2.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldNama2.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldNama2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldNama2ActionPerformed(evt);
@@ -91,10 +101,12 @@ public class TambahPelanggan extends javax.swing.JFrame {
         });
 
         buttonSimpan2.setBackground(new java.awt.Color(48, 48, 48));
+        buttonSimpan2.setForeground(new java.awt.Color(255, 255, 255));
         buttonSimpan2.setText("Simpan");
         buttonSimpan2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonKembali.setBackground(new java.awt.Color(48, 48, 48));
+        buttonKembali.setForeground(new java.awt.Color(255, 255, 255));
         buttonKembali.setText("Kembali");
         buttonKembali.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -243,43 +255,19 @@ public class TambahPelanggan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LabelAlamat;
-    private javax.swing.JLabel LabelAlamat1;
     private javax.swing.JLabel LabelAlamat2;
-    private javax.swing.JLabel LabelKelamin;
-    private javax.swing.JLabel LabelKelamin1;
     private javax.swing.JLabel LabelKelamin2;
-    private javax.swing.JLabel LabelNama;
-    private javax.swing.JLabel LabelNama1;
     private javax.swing.JLabel LabelNama2;
-    private javax.swing.JLabel LabelTambahDataPelanggan;
-    private javax.swing.JLabel LabelTambahDataPelanggan1;
     private javax.swing.JLabel LabelTambahDataPelanggan2;
-    private javax.swing.JLabel LabelnoTelp;
-    private javax.swing.JLabel LabelnoTelp1;
     private javax.swing.JLabel LabelnoTelp2;
-    private javax.swing.JTextField TextFieldAlamat;
-    private javax.swing.JTextField TextFieldAlamat1;
     private javax.swing.JTextField TextFieldAlamat2;
-    private javax.swing.JTextField TextFieldNama;
-    private javax.swing.JTextField TextFieldNama1;
     private javax.swing.JTextField TextFieldNama2;
-    private javax.swing.JTextField TextFieldnoTelp;
-    private javax.swing.JTextField TextFieldnoTelp1;
     private javax.swing.JTextField TextFieldnoTelp2;
-    private javax.swing.JRadioButton buttonCewe;
-    private javax.swing.JRadioButton buttonCewe1;
     private javax.swing.JRadioButton buttonCewe2;
-    private javax.swing.JRadioButton buttonCowo;
-    private javax.swing.JRadioButton buttonCowo1;
     private javax.swing.JRadioButton buttonCowo2;
     private javax.swing.JButton buttonKembali;
-    private javax.swing.JButton buttonSimpan;
-    private javax.swing.JButton buttonSimpan1;
     private javax.swing.JButton buttonSimpan2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

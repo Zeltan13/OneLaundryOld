@@ -48,18 +48,23 @@ public class TambahCucian extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(23, 23, 23));
 
         LabelTambahDataCucian.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        LabelTambahDataCucian.setForeground(new java.awt.Color(255, 255, 255));
         LabelTambahDataCucian.setText("Tambah Data Cucian");
 
         LabelIDPelanggan.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelIDPelanggan.setForeground(new java.awt.Color(255, 255, 255));
         LabelIDPelanggan.setText("ID Pelanggan");
 
         LabelBerat.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelBerat.setForeground(new java.awt.Color(255, 255, 255));
         LabelBerat.setText("Berat (kg)");
 
         LabelHarga.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelHarga.setForeground(new java.awt.Color(255, 255, 255));
         LabelHarga.setText("Harga (Rp)");
 
         TextFieldHarga.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldHarga.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldHarga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldHargaActionPerformed(evt);
@@ -67,6 +72,7 @@ public class TambahCucian extends javax.swing.JFrame {
         });
 
         TextFieldIDPelanggan.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldIDPelanggan.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldIDPelanggan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldIDPelangganActionPerformed(evt);
@@ -74,6 +80,7 @@ public class TambahCucian extends javax.swing.JFrame {
         });
 
         TextFieldBerat.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldBerat.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldBerat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldBeratActionPerformed(evt);
@@ -81,9 +88,11 @@ public class TambahCucian extends javax.swing.JFrame {
         });
 
         LabelNamaBarang.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
+        LabelNamaBarang.setForeground(new java.awt.Color(255, 255, 255));
         LabelNamaBarang.setText("Nama Barang");
 
         TextFieldNamaBarang.setBackground(new java.awt.Color(0, 0, 0));
+        TextFieldNamaBarang.setForeground(new java.awt.Color(255, 255, 255));
         TextFieldNamaBarang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextFieldNamaBarangActionPerformed(evt);
@@ -91,10 +100,12 @@ public class TambahCucian extends javax.swing.JFrame {
         });
 
         buttonKembali.setBackground(new java.awt.Color(48, 48, 48));
+        buttonKembali.setForeground(new java.awt.Color(255, 255, 255));
         buttonKembali.setText("Kembali");
         buttonKembali.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonSimpan.setBackground(new java.awt.Color(48, 48, 48));
+        buttonSimpan.setForeground(new java.awt.Color(255, 255, 255));
         buttonSimpan.setText("Simpan");
         buttonSimpan.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         buttonSimpan.addActionListener(new java.awt.event.ActionListener() {
