@@ -5,6 +5,9 @@
  */
 package View;
 
+import static java.lang.Float.parseFloat;
+import static java.lang.Integer.parseInt;
+
 /**
  *
  * @author DHAFINDRA
@@ -103,6 +106,11 @@ public class TambahCucian extends javax.swing.JFrame {
         buttonKembali.setForeground(new java.awt.Color(255, 255, 255));
         buttonKembali.setText("Kembali");
         buttonKembali.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonKembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonKembaliActionPerformed(evt);
+            }
+        });
 
         buttonSimpan.setBackground(new java.awt.Color(48, 48, 48));
         buttonSimpan.setForeground(new java.awt.Color(255, 255, 255));
@@ -223,7 +231,19 @@ public class TambahCucian extends javax.swing.JFrame {
 
     private void buttonSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSimpanActionPerformed
         // TODO add your handling code here:
+        String id = TextFieldIDPelanggan.getText();
+        String namaBarang = TextFieldNamaBarang.getText();
+        double berat = parseFloat(TextFieldBerat.getText());
+        int harga = parseInt(TextFieldHarga.getText());
+        
     }//GEN-LAST:event_buttonSimpanActionPerformed
+
+    private void buttonKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonKembaliActionPerformed
+        // TODO add your handling code here:
+        Home H = new Home();
+        setVisible(false);
+        H.setVisible(true);
+    }//GEN-LAST:event_buttonKembaliActionPerformed
 
     /**
      * @param args the command line arguments

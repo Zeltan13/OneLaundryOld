@@ -181,20 +181,20 @@
                                   <Component id="LabelIDPelanggan1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="LabelJenisLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                       <Component id="buttonCowo" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonCewe" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="LabelJenisLayanan" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="LabelStatus" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                       <Component id="buttonSelesai" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonCewe1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="LabelStatus" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
@@ -403,6 +403,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonKembaliActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="buttonCowo">
               <Properties>

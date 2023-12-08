@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="groupKelamin">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -88,9 +92,9 @@
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="TextFieldNama2" alignment="0" pref="165" max="32767" attributes="0"/>
-                                  <Component id="TextFieldnoTelp2" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="TextFieldAlamat2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TextFieldNama" alignment="0" pref="165" max="32767" attributes="0"/>
+                                  <Component id="TextFieldnoTelp" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TextFieldAlamat" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -100,13 +104,13 @@
                                       <Component id="LabelKelamin2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="buttonCowo2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonCowo" min="-2" max="-2" attributes="0"/>
                                           <Component id="buttonKembali" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="buttonSimpan2" min="-2" pref="61" max="-2" attributes="0"/>
-                                          <Component id="buttonCewe2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonCewe" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -124,24 +128,24 @@
                       <Component id="LabelTambahDataPelanggan2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextFieldNama2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextFieldNama" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelNama2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextFieldAlamat2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextFieldAlamat" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelAlamat2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TextFieldnoTelp2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TextFieldnoTelp" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelnoTelp2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="LabelKelamin2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="buttonCowo2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="buttonCewe2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonCowo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonCewe" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -209,10 +213,13 @@
                 <Property name="text" type="java.lang.String" value="Jenis Kelamin"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="buttonCowo2">
+            <Component class="javax.swing.JRadioButton" name="buttonCowo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="17" green="17" red="17" type="rgb"/>
+                </Property>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="groupKelamin"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -220,10 +227,13 @@
                 <Property name="text" type="java.lang.String" value="Laki-Laki"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="buttonCewe2">
+            <Component class="javax.swing.JRadioButton" name="buttonCewe">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="17" green="17" red="17" type="rgb"/>
+                </Property>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="groupKelamin"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -231,7 +241,7 @@
                 <Property name="text" type="java.lang.String" value="Perempuan"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="TextFieldnoTelp2">
+            <Component class="javax.swing.JTextField" name="TextFieldnoTelp">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -241,10 +251,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldnoTelp2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldnoTelpActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="TextFieldAlamat2">
+            <Component class="javax.swing.JTextField" name="TextFieldAlamat">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -254,10 +264,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldAlamat2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldAlamatActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="TextFieldNama2">
+            <Component class="javax.swing.JTextField" name="TextFieldNama">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -267,7 +277,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldNama2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldNamaActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="buttonSimpan2">
@@ -285,6 +295,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSimpan2ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="buttonKembali">
               <Properties>
@@ -301,6 +314,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonKembaliActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

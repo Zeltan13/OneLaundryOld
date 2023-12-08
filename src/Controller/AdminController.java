@@ -5,6 +5,11 @@
  */
 package Controller;
 import View.TambahAdmin;
+import java.util.ArrayList;
+import Model.Admin;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  *
@@ -12,10 +17,26 @@ import View.TambahAdmin;
  */
 public class AdminController {
     private TambahAdmin view;
+    private Statement St;
+    private Connection Con;
+    private ResultSet Rs;
+    private String sql="";
 
-    public AdminController(TambahAdmin view) {
-        this.view = view;
-        view.getButtonSimpan().addActionListener(e -> simpanButtonClicked());
+    public boolean AdminController() {
+        ArrayList<Admin> a = new ArrayList();
+        a = getAdminData();
+        
+//        for(Admin adm:a){
+//            if(){
+//                return true;
+//            }
+//        }
+        return false;
+    }
+    
+    public ArrayList<Admin> getAdminData(){
+        ArrayList listAdmin = new ArrayList();
+        return listAdmin;
     }
     
     private void simpanButtonClicked() {

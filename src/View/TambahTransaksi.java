@@ -139,6 +139,11 @@ public class TambahTransaksi extends javax.swing.JFrame {
         buttonKembali.setForeground(new java.awt.Color(255, 255, 255));
         buttonKembali.setText("Kembali");
         buttonKembali.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonKembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonKembaliActionPerformed(evt);
+            }
+        });
 
         buttonCowo.setBackground(new java.awt.Color(23, 23, 23));
         groupLayanan.add(buttonCowo);
@@ -244,17 +249,17 @@ public class TambahTransaksi extends javax.swing.JFrame {
                             .addComponent(TextFieldIDPelanggan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LabelIDPelanggan1))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(LabelJenisLayanan)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(buttonCowo)
-                                .addComponent(buttonCewe)))
+                                .addComponent(buttonCewe))
+                            .addComponent(LabelJenisLayanan))
                         .addGap(19, 19, 19)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(LabelStatus)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(buttonSelesai)
-                                .addComponent(buttonCewe1)))
+                                .addComponent(buttonCewe1))
+                            .addComponent(LabelStatus))
                         .addGap(5, 5, 5))
                     .addComponent(jSeparator1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -310,6 +315,13 @@ public class TambahTransaksi extends javax.swing.JFrame {
     private void TextFieldIDPelanggan4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldIDPelanggan4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextFieldIDPelanggan4ActionPerformed
+
+    private void buttonKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonKembaliActionPerformed
+        // TODO add your handling code here:
+        Home H = new Home();
+        setVisible(false);
+        H.setVisible(true);
+    }//GEN-LAST:event_buttonKembaliActionPerformed
 
     /**
      * @param args the command line arguments
